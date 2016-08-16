@@ -12,7 +12,7 @@ apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
 apt-get update
 apt-get install git -y
 
-apt-get install -y php7.0-fpm fcgiwrap mcrypt php7.0-mysql php7.0-memcached php7.0-zip php7.0-pspell php7.0-recode php7.0-json php7.0-opcache php7.0-curl php7.0-gd php7.0-intl php-pear php7.0-imagick php7.0-imap php7.0-mcrypt php7.0-mbstring php7.0-sqlite php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-redis memcached hhvm varnish redis-server
+apt-get install -y php7.0-fpm fcgiwrap mcrypt php7.0-mysql php7.0-memcached php7.0-zip php7.0-pspell php7.0-recode php7.0-json php7.0-opcache php7.0-curl php7.0-gd php7.0-intl php-pear php7.0-imagick php7.0-imap php7.0-mcrypt php7.0-mbstring php7.0-sqlite php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-redis memcached
 
 cp /etc/php/7.0/fpm/php.ini /etc/php/7.0/fpm/php.ini.BACK
 sed -i 's/max_execution_time = 30/max_execution_time = 120/' /etc/php/7.0/fpm/php.ini
